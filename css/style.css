@@ -128,6 +128,9 @@
   justify-content: space-evenly;
   text-decoration: none;
 }
+.copy {
+  color: white;
+}
 
 .list {
   list-style: none;
