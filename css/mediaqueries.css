@@ -1,0 +1,107 @@
+/*MOBILE*/
+@media screen and (min-width: 480px) {
+  /*HEADER*/
+
+  .fa-bars {
+    display: none;
+  }
+  .title {
+    margin-top: 2rem;
+  }
+  .nav-bar {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    background: #150485;
+  }
+
+  .ulist-header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .list {
+    display: flex;
+  }
+  .anchor-style {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+  }
+  .anchor-style:hover {
+    color: #03c4a1;
+  }
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+  /*MAIN*/
+
+  .main {
+    display: flex;
+  }
+  .main-section {
+    flex: 1 1 70%;
+    border-right: 1px solid #b3b3b3;
+  }
+  .aside {
+    flex: 1 1 30%;
+  }
+
+  /*FOOTER*/
+
+  .ulist {
+    justify-content: flex-end;
+  }
+  .copy {
+    position: relative;
+    right: 70%;
+    color: white;
+  }
+  .fa-facebook-f {
+    position: relative;
+    right: 16rem;
+  }
+  .fa-twitter {
+    position: relative;
+    right: 14rem;
+  }
+  .fa-instagram {
+    position: relative;
+    right: 12rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  /*HEADER*/
+
+  .date {
+    font-size: 14px;
+  }
+
+  /*MAIN*/
+
+  .headline {
+    font-size: 20px;
+  }
+  .hidden-1 {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /*MAIN*/
+
+  .hidden-2 {
+    display: block;
+  }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1200px) {
+  /*MAIN*/
+
+  .hidden-3 {
+    display: block;
+  }
+}
