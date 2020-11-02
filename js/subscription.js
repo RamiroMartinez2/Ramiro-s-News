@@ -343,3 +343,19 @@ button.addEventListener('click', function (e) {
         inputWithError = [];
     }
 })
+
+// BONUS TITLE
+
+let title = document.getElementById('title');
+let h1 = document.createElement('h1');
+title.appendChild(h1)
+h1.textContent = 'Hola';
+h1.setAttribute('class','h1-title')
+
+inputName.addEventListener('focus', function(){
+   inputName.addEventListener('keydown', function(){
+h1.textContent = `Hola  ${inputName.value}`;
+    })
+})
+
+
