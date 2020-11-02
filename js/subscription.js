@@ -93,12 +93,13 @@ inputPassRepeat.addEventListener('blur', function () {
 
 // AGE VALIDATION
 
+let expRegAge = /./;
 inputAge.addEventListener('focus', function () {
     document.getElementById('error-age').style.display = 'none';
 })
 
 inputAge.addEventListener('blur', function () {
-    if (isNaN(inputAge.value) || inputAge.value <= 17) {
+    if (isNaN(inputAge.value) || inputAge.value <= 17 || expRegAge.test(inputAge.value)) {
         document.getElementById('error-age').style.display = 'block';
     }
 })
@@ -245,8 +246,8 @@ button.addEventListener('click', function (e) {
     }
 
     // AGE VALIDATION
-
-    if (isNaN(inputAge.value) || inputAge.value <= 17) {
+let expReguAge = /./;
+    if (isNaN(inputAge.value) || inputAge.value <= 17 || expReguAge.test(inputAge.value)) {
         document.getElementById('error-age').style.display = 'block';
         ageHasError = 'Age: It is not a whole number greater than 18.';
         inputWithError.push(`
