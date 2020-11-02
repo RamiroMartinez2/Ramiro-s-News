@@ -334,13 +334,17 @@ button.addEventListener('click', function (e) {
     // ALERT OK
     if (inputWithError == '') {
         alertOk = newSubscription.join()
-        alert(alertOk)
+        alert(`Form was completed successfully. Check the details bellow:
+        ${alertOk}`)
         newSubscription = [];
+        h1.textContent = `Hola  ${inputName.value}`;
     } else {
         // ALERT ERROR
         alertError = inputWithError.join()
-        alert(alertError);
+        alert(`Check the following fields before continue:
+        ${alertError}`);
         inputWithError = [];
+        h1.textContent = `Hola  ${inputName.value}`;
     }
 })
 
