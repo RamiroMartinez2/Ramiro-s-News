@@ -22,7 +22,7 @@ inputName.addEventListener('focus', function () {
 })
 
 inputName.addEventListener('blur', function () {
-    if (inputName.value.length < 6 || validateWhiteSpace(inputName.value)) {
+        if (inputName.value.length < 8 || validateWhiteSpace(inputName.value)) {
         document.getElementById('error-name').style.display = 'block';
     }
 })
@@ -193,7 +193,7 @@ button.addEventListener('click', function (e) {
 
     //FULL NAME VALIDATION
 
-    if (inputName.value.length < 6 || validateWhiteSpace(inputName.value)) {
+    if (inputName.value.length < 8 || validateWhiteSpace(inputName.value)) {
         document.getElementById('error-name').style.display = 'block';
         nameHasError = 'Full Name: It must have more than 6 letters and at least one space in between.';
         inputWithError.push(`
