@@ -1,0 +1,82 @@
+
+.section {
+    display: flex;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    border: 1px solid #323232;
+    width: 100%;  
+}
+.complete-details {
+    width: 100%;
+    background: #150485;
+    padding: 4%;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+}
+.titles{
+    margin-top: 1rem;
+    margin-left: 4%;
+    margin-bottom: 1rem;
+}
+.inputs{
+    width: 92%;
+    margin-left: 4%;
+   
+}
+.error{
+    display: none;
+    margin-left: 4%;
+    color: red;
+    margin-top: 1%;
+}
+
+.dni {
+    text-transform: uppercase;
+}
+.button {
+    width: 30%;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-left: 32%;
+    padding: 2%;
+    background: #150485;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: white;
+}
+
+/* MEDIAQUERIES*/
+
+/*TABLET*/
+@media screen and (min-width: 768px) {
+    .main-subsciption{
+        display: flex;
+    }
+    .form{
+        height: 54%;
+    }
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    width: 50%;
+}
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    width: 50%;
+}
+.button{
+   position: relative;
+   right: 47%;
+}
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription readers</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/mediaqueries.css" />
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/subscription.css">
+</head>
+
+<body class="container">
+  <header class="header">
+    <i class="fas fa-bars"></i>
+    <h1 class="title">Ramiro's News</h1>
+    <span class="date">Monday, November 2, 2020 </span>
+    <nav class="nav-bar">
+      <ul class="ulist-header">
+        <li class="list"><a class="anchor-style" href="#">best news</a></li>
+        <li class="list"><a class="anchor-style" href="#">gossip</a></li>
+        <li class="list"><a class="anchor-style" href="#">photos</a></li>
+        <li class="list"><a class="anchor-style" href="#">about us</a></li>
+        <li class="list"><a class="anchor-style" href="./subscription.html">Subscription Now</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-subsciption">
+    <section class="section">
+      <div id="title"></div>
+      <form id="form" class="form">
+        <div class="container-1">
+          <div>
+            <h3 class="titles">Full Name</h3>
+            <input class="inputs" type="text" name="name" id="input-name" placeholder=" Example: Ramiro Martinez">
+            <div class="error" id="error-name">
+              <p id='alert-name'>*It must have more than 6 letters and at least one space in between.</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="titles">Email</h3>
+            <input id="input-email" class="inputs" type="email" placeholder="Example: ramiro@gmail.com">
+            <div class="error" id="error-mail">
+              <p id='alert-email'>*It must have a valid email format.</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="titles">Password</h3>
+            <input id="password" class="inputs" type="password" name="pass">
+            <div class="error" id="error-pass">
+              <p id='alert-pass'>*At least 8 characters, consisting of letters and numbers.</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="titles">Repeat Password</h3>
+            <input id="password-repeat" class="inputs" type="password" name="pass">
+            <div class="error" id="error-pass-repeat">
+              <p id='alert-pass-repeat'>*Passwords do not match.</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="titles">Age</h3>
+            <input id="age" class="inputs" type="text" name="age" placeholder="Example: 29">
+            <div class="error" id="error-age">
+              <p id='alert-age'>*It is not a whole number greater than 18.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-2">
+          <div>
+            <h3 class="titles">Phone Number</h3>
+            <input id="phone-number" class="inputs" type="text" name="phone-number"
+              placeholder="Example: 5493412588974">
+            <div class="error" id="error-number">
+              <p>*Number of at least 7 digits, do not accept spaces, hyphens or parentheses.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3 class="titles">Adress</h3>
+            <input id="adress" class="inputs" type="text" name="adress" placeholder="Example: Necochea 1500">
+            <div class="error" id="error-adress">
+              <p>*At least 5 characters, with letters, numbers and a space in between.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3 class="titles">City</h3>
+            <input id="city" class="inputs" type="text" name="city" placeholder="Example: Rosario">
+            <div class="error" id="error-city">
+              <p>*At least 3 characters.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3 class="titles">Postal Code</h3>
+            <input id="postal-code" class="inputs" type="text" name="postal-code" placeholder="Example: 2000">
+            <div class="error" id="error-postal">
+              <p>*At least 3 characters.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3 class="titles dni">dni</h3>
+            <input id="dni" class="inputs " type="text" name="dni" placeholder="Example: 35584750">
+            <div class="error" id="error-dni">
+              <p>*7 or 8 digit number.
+              </p>
+            </div>
+          </div>
+          <button id="button" class="button" type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="nav-footer">
+      <ul class="ulist">
+        <li class="list copy">Copyright© 2020</li>
+        <li class="list">
+          <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=9869919170&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Ffeed%3Fapp_id%3D9869919170%26link%3Dhttps%253A%252F%252Fwww.nytimes.com%252F2020%252F10%252F08%252Ftechnology%252Fmicrosoft-mobile-applications-competition.html%253Fsmid%253Dfb-share%26name%3DMicrosoft%2BSays%2BApp%2BStores%2BShould%2BBe%2BMore%2BCompetitive%26redirect_uri%3Dhttps%253A%252F%252Fwww.facebook.com%252F&cancel_url=https%3A%2F%2Fwww.facebook.com%2F%3Ferror_code%3D4201%26error_message%3DUser%2Bcanceled%2Bthe%2BDialog%2Bflow%23_%3D_&display=popup&locale=es_LA"
+            target="blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="list">
+          <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.nytimes.com%2F2020%2F10%2F08%2Ftechnology%2Fmicrosoft-mobile-applications-competition.html%3Fsmid%3Dtw-share&text=Microsoft%20Says%20App%20Stores%20Should%20Be%20More%20Competitive"
+            target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="list">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-instagram"></i></a>
+        </li>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="./js/subscription.js"></script>
+</body>
+
+</html>
