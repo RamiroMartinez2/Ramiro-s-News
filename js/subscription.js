@@ -246,7 +246,7 @@ button.addEventListener('click', function (e) {
     }
 
     // AGE VALIDATION
-let expReguAge = /./;
+    let expReguAge = /[\,\.]/;
     if (isNaN(inputAge.value) || inputAge.value <= 17 || expReguAge.test(inputAge.value)) {
         document.getElementById('error-age').style.display = 'block';
         ageHasError = 'Age: It is not a whole number greater than 18.';
