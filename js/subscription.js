@@ -93,7 +93,7 @@ inputPassRepeat.addEventListener('blur', function () {
 
 // AGE VALIDATION
 
-let expRegAge = /./;
+let expRegAge = /[\,\.]/;
 inputAge.addEventListener('focus', function () {
     document.getElementById('error-age').style.display = 'none';
 })
